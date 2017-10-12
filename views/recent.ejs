@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<h1>
+  Recent Searches
+</h1>
+
+<ul style="list-style: none;"
+<% searches.forEach(function(search){ %>
+  <li>
+    <b><%= search.term %></b> <em>(<%= search.created.toLocaleDateString("en-us") %>)</em>
+  </li>
+<% }); %>
+</ul>
+
+<h4>
+  <a href="/">Go Back</a>
+</h4>
+
+<% include partials/footer %>

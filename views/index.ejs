@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<h1>
+  Image Search Abstraction Layer
+</h1>
+
+<form action="/results" method="post">
+  <label>Search:</label>
+  <input type="text" name="query[term]" placeholder="Search">
+  
+  <label>Page #:</label>
+  <input type="number" name="offset" value="1" min="1" max="10">
+  
+  <input type="submit">
+</form>
+
+<h4>
+  <a href="/recent">Recent Searches</a>
+</h4>
+
+<% include partials/footer %>

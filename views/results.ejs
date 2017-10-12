@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<a href="/">Search Again</a>
+
+<ul style="display: flex; flex-wrap: wrap; list-style: none;"
+<% images.forEach(function(image){ %>
+  <li>
+    <a href="<%= image.link %>" target="blank">
+      <img src="<%= image.link %>" title="<%= image.title %>" style="height: 200px; margin: 5px">
+    </a>
+</li>
+<% }); %>
+</ul>
+
+<% include partials/footer %>
